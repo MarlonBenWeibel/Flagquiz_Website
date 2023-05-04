@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: auto;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+main, 
+.play,
+.flags,
+.quellen{
+    background-image: url("/images/Background1.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main>* {
+    padding: 0.5em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: skyblue !important;
+}
+
+a:visited {
+    color: black;
+}
+
+.circle {
+    background-image: url("/images/Circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle {
+    background-image: url("/images/Rectangle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 300%;
+    height: 350vh;
+    margin-top: 15%;
+    z-index: 100;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: auto;
+    position: relative;
+}
+
+.home_button {
+    position: fixed;
+    top: 126px;
+    left: 34px;
+}
+
+
+.title {
+    margin-top: 2vh;
+    
+}
+
+.play_header {
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+
+}
+
+
+.numberofflags_title {
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+
+.continents_title {
+    padding-bottom: 20px;
+    padding-right: 180px;
+    padding-top: 150px;
+}
+
+.number-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.continents {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 180px;
+}
+
+.numbers {
+    padding-right: 8px;
+    padding-left: 20px;
+}
+
+
+.play_button{
+padding-top: 1.5em;
+padding-bottom: 1em ;
+}
+.flags_button {
+    padding-bottom: 1em ;
+}
+
+
+#quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.options-container button {
+    padding: 0.5em;
+}
+
+#question-container {
+    max-width: 225px;
+}
+
+#question-container img {
+    max-width: 250px;
+}
+
+#question-container p {
+    padding: 0.5em;
+    text-align: center;
+}
+
+#country-name {
+    padding: 2em;
+    text-align: center;
+}
+
+#country-flag {
+    max-width: 240px;
+    
+}
+
+img {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+.links {
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.flags_title {
+    position: fixed;
+    top: 140px;
+    left: 156px;
+}
+
+.quellen_title {
+    position: fixed;
+    top: 140px;
+    left: 118px;
+}
+
+.search_bar {
+    position: fixed;
+    top: 250px;
+    left: 90px;
+}
+  
+
+@media screen and (min-width: 600px) {
+
+    main, 
+    .play,
+    .flags,
+    .quellen{
+        background-image: url("/images/Background1.jpg");
+        background-repeat: repeat-y;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rectangle {
+        margin: 0;
+    }
+
+    .options-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .options-container button {
+        padding: 0.5em;
+    }
+    
+    #question-container p {
+        padding: 2em;
+        text-align: center;
+    }
+
+    #country-name {
+        padding: 4em;
+        text-align: center;
+    }
+
+    .home_button {
+        position: fixed;
+        top: 80px;
+        left: 757px;
+    }
+
+    .flags_title {
+        position: fixed;
+        top: 100px;
+        left: 918px;
+    }
+    
+    .quellen_title {
+        position: fixed;
+        top: 100px;
+        left: 870px;
+    }
+
+    .search_bar {
+        position: fixed;
+        top: 250px;
+        left: 90px;
+    }
+
+    .search_bar {
+        position: fixed;
+        top: 230px;
+        left: 850px;
+    }
+
+    .links {
+        text-align: center;
+        padding-top: 550px;
+    }
+
+    .title {
+        margin-bottom: 5vh;
+    }
+
+    .quellen_button {
+        padding-top: 10vh;
+
+    }
+
+    .play_button {
+        padding-top: 10vh;
+        padding-bottom: 3vh;
+        width: 5%;
+    }
+
+    .flags_button {
+        width: 5%;
+    }
+}
